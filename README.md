@@ -75,8 +75,6 @@ La imagen se escala al tamaño de la ventana y se muestra continuamente en panta
 
 - **Archivo**: `E6/Token.py` — Definición del `Token` como `dataclass` con utilidades (comparación, comprobaciones de tipo). Se integra con `Dicc.py` para representar tokens producidos por el analizador/voz.
 
-- **Archivo**: `E6/Scanner.py` — (Vacío) Archivo presente pero actualmente sin contenido implementado.
-
 - **Archivo**: `E6/Dicc.py` — Enumeración (`Enum`) `Dicc` que define los tipos de token usados por el analizador/voz: `ACCION`, `OBJETO`, `LUGAR`, `PORCENTAJE`, `NUMERO`.
 
 - **Archivo**: `E4_ConvolutionalNeuronalNetwork/Reconocimiento_Facial/Reconocimiento_Facial.py` — Aplicación de reconocimiento facial en tiempo real con OpenCV y un modelo Keras. Captura video, detecta caras con Haar cascades, normaliza la región facial y pasa por la red CNN para predecir una clase; dibuja rectángulos y etiquetas de confianza en la cámara.
