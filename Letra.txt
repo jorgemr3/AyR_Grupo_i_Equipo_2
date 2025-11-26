@@ -1,0 +1,31 @@
+class program {
+	void girar(){
+    	if(leftIsClear){
+        	turnleft();           
+        } else if(rightIsClear){
+        	turnleft();
+            turnleft();
+            turnleft(); 
+        }
+   
+    }
+    program () {
+        // TODO poner codigo aqui
+        while(frontIsClear){
+        	move();
+            if(frontIsBlocked || leftIsClear){
+            	girar();
+            }
+        	if(notNextToABeeper){
+            	if(anyBeepersInBeeperBag){
+                	putbeeper();
+                }
+            } else if(nextToABeeper){
+            	turnoff();
+            }
+            
+        }
+        
+        
+    }
+}

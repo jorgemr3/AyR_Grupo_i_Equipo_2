@@ -1,0 +1,79 @@
+class program {
+
+    void turnright() {
+        iterate(3) {
+            turnleft();
+        }
+    }
+
+    void turnaround() {
+        iterate(2) {
+            turnleft();
+        }
+    }
+
+    void recogerEsquina() {
+        while (nextToABeeper) {
+            pickbeeper();
+        }
+    }
+
+    void dejarEsquina() {
+        if (anyBeepersInBeeperBag) {
+            putbeeper();
+        }
+    }
+
+    void recorrerColumnaRecogiendo() {
+        recogerEsquina();
+        while (frontIsClear) {
+            move();
+            recogerEsquina();
+        }
+    }
+
+    void recorrerColumnaDejando() {
+        dejarEsquina();
+        while (frontIsClear) {
+            move();
+            dejarEsquina();
+        }
+    }
+
+    program() {
+        recorrerColumnaRecogiendo();
+
+        while (rightIsClear) {
+            if (facingNorth) {
+                turnright();
+                move();
+                turnright();
+                recorrerColumnaRecogiendo();
+            } else {
+                turnleft();
+                move();
+                turnleft();
+                recorrerColumnaRecogiendo();
+            }
+        }
+
+        turnaround();
+        recorrerColumnaDejando();
+
+        while ((facingNorth && leftIsClear) || (facingSouth && rightIsClear)) {
+            if (facingSouth) {
+                turnright();
+                move();
+                turnright();
+                recorrerColumnaDejando();
+            } else {
+                turnleft();
+                move();
+                turnleft();
+                recorrerColumnaDejando();
+            }
+        }
+
+        turnoff();
+    }
+}
