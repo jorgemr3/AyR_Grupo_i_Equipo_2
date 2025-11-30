@@ -8,8 +8,8 @@ from PIL import Image, ImageTk
 pygame.mixer.init()
 
 # Canciones (rutas locales)
-song_peace = "Peace.mp3"
-song_metal = "Metal.mp3"
+song_peace = "E5\Peace.mp3"
+song_metal = "E5\Metal.mp3"
 
 # Estado actual
 current_song = None
@@ -75,9 +75,9 @@ root.geometry("900x700")
 root.configure(bg="gray")
 
 # Cargar imágenes
-img_peace = Image.open("Peace.jpg").resize((250, 250))
-img_metal = Image.open("Metal.jpg").resize((250, 250))
-img_default = Image.open("default.jpg").resize((250, 250))
+img_peace = Image.open("E5\Peace.jpg").resize((250, 250))
+img_metal = Image.open("E5\Metal.jpg").resize((250, 250))
+img_default = Image.open("E5\default.jpg").resize((250, 250))
 
 photo_peace = ImageTk.PhotoImage(img_peace, master=root)
 photo_metal = ImageTk.PhotoImage(img_metal, master=root)

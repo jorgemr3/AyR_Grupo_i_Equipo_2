@@ -28,11 +28,11 @@ class Token:
 
 
 # ---------------- MODELO ----------------
-if not os.path.exists("vosk-model-small-es-0.42"):
+if not os.path.exists("E6/vosk-model-small-es-0.42"):
     print("Descargar modelo de https://alphacephei.com/vosk/models")
     sys.exit(1)
 
-model = Model("vosk-model-small-es-0.42")
+model = Model("E6/vosk-model-small-es-0.42")
 recognizer = KaldiRecognizer(model, 16000)
 
 # Diccionario de palabras clave

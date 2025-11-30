@@ -4,8 +4,8 @@ from keras.utils import load_img, img_to_array
 from keras.models import load_model
 
 alto, largo = 300, 300
-modelo = "../E4_ConvolutionalNeuronalNetwork/modelo3/modelo.keras"
-pesos = '../E4_ConvolutionalNeuronalNetwork/modelo3/pesos.weights.h5'
+modelo = "E4_ConvolutionalNeuronalNetwork\modelo3\modelo.keras"
+pesos = 'E4_ConvolutionalNeuronalNetwork\modelo3\pesos.weights.h5'
 
 cnn = load_model(modelo)
 cnn.load_weights(pesos)
@@ -41,7 +41,7 @@ def get_folders_name_from(from_location):
 # Probar red neuronal
 def probar_red_neuronal():
     cnn.summary()
-    base_location = "../E4_ConvolutionalNeuronalNetwork/F3-Prueba"
+    base_location = "E4_ConvolutionalNeuronalNetwork\\F3-Prueba"
     folders = get_folders_name_from(base_location)
 
     correct = 0

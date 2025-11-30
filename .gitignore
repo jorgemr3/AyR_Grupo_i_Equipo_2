@@ -18,3 +18,8 @@ E4_ConvolutionalNeuronalNetwork/modelo2/modeloLBPHFace.xml
 E4_ConvolutionalNeuronalNetwork/modelo3/modelo.keras
 E4_ConvolutionalNeuronalNetwork/modelo3/pesos.weights.h5
 E4_ConvolutionalNeuronalNetwork/modelo2/modeloFisherFace.xml
+Coche/Pista.py
+Coche/pista.png
+modelo
+modelo/modelo.keras
+modelo/pesos.weights.h5
