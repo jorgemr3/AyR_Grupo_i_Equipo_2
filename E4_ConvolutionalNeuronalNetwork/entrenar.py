@@ -1,7 +1,7 @@
 import os
 from keras import optimizers
 from keras.models import Sequential
-from keras.layers import Dropout, Flatten, Dense, Activation
+from keras.layers import Dropout, Flatten, Dense
 from keras.layers import Convolution2D, MaxPooling2D
 from keras import backend as K
 from keras.src.legacy.preprocessing.image import ImageDataGenerator
@@ -9,9 +9,9 @@ from keras.callbacks import ReduceLROnPlateau, EarlyStopping
 
 K.clear_session()
 
-# Rutas de datos
-data_entrenamiento = "../E4_ConvolutionalNeuronalNetwork/F1-Entrenamiento"
-data_validacion = "../E4_ConvolutionalNeuronalNetwork/F2-Validacion"
+# Rutas de datos (relativas a este script)
+data_entrenamiento = "E4_ConvolutionalNeuronalNetwork\\F1-Entrenamiento"
+data_validacion = "E4_ConvolutionalNeuronalNetwork\\F2-Validacion"
 
 # Parámetros base
 epocas = 80

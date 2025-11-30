@@ -4,7 +4,8 @@ screen = pygame.display.set_mode((900, 700))
 pygame.display.set_caption("Pista desde imagen")
 
 # Carga de imagen
-pista = pygame.image.load("pista.png")
+ruta_pista = "Coche/pista.png"
+pista = pygame.image.load(ruta_pista)
 pista = pygame.transform.scale(pista, (900, 700))
 
 running = True
